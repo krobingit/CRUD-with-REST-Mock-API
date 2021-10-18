@@ -1,0 +1,169 @@
+:root{
+    font-size:10px;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+   
+   background-image:url("https://i.pinimg.com/originals/c8/c9/d6/c8c9d68a957fc322b48c91aa85634473.jpg");
+
+   
+}
+.id{
+    font-size:1.8rem;
+}
+.user-avatar{
+    border-radius: 50%;
+    height:10rem;
+    width:10rem;
+    object-fit: cover;
+}
+
+.container,.user-add-container,.title{
+    margin:3rem;
+   
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+.user-add-container{
+  
+    display: flex;
+    padding: 3rem;
+    justify-content: space-evenly;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+    font-size:1.8rem;
+    color:orangered
+}
+
+.user-container{
+    display: flex;
+    padding: 3rem;
+    margin:2rem;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 4rem;
+    transition:all 0.3s ease-in-out;
+    box-shadow: 11px 13px 68px -12px rgba(0,0,0,0.6);
+-webkit-box-shadow: 11px 13px 68px -12px rgba(0,0,0,0.6);
+-moz-box-shadow: 11px 13px 68px -12px rgba(0,0,0,0.6);
+
+
+background-image: linear-gradient(to right top, #b3470d, #bc4a0f, #c54e10, #cf5112, #d85414, #dd5a15, #e25f15, #e76516, #e96e16, #ea7616, #ec7f18, #ed871a);;
+
+
+}
+.user-container:hover{
+    color: rgb(9, 6, 49);
+    cursor: pointer;
+}
+
+.user-add-container input{
+    width:22rem;
+    height:5rem;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 1.5rem;
+    border-style: solid;
+    text-align: center;
+    outline:none;
+    transition: all 0.6s ease-in-out;
+    background-color: bisque;
+    color:#bc4a0f;
+    
+}
+.user-add-container input:focus{
+    box-shadow: 0 0 5px rgb(238, 59, 4);
+    border: 2.5px solid rgb(173, 72, 5);
+    font-size:1.6rem;
+}
+.btn{
+    width:11rem;
+    height:5rem;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 1.5rem;
+    border-style: solid;
+    background-color: beige;
+    transition:all 0.4s ease-in-out;
+    font-size: 1.5rem;
+    opacity: 0.9;
+}
+
+.btn:hover{
+    color: rgb(9, 6, 49);
+    background-color: rgb(243, 116, 43);
+    opacity: 1;
+    cursor: pointer;
+}
+.editElement>input{
+    width: 18rem;
+   height: 5rem;
+   font-family: 'Poppins', sans-serif;
+   border-radius: 1.5rem;
+   border-style: solid;
+   outline:none;
+   text-align: center;
+   transition:all 0.4s ease-in-out;
+   color:#bc4a0f;
+  
+}
+.editElement>input:focus{
+    box-shadow: 0 0 5px rgb(238, 59, 4);
+    border: 2.5px solid rgb(173, 72, 5);
+    font-size:1.4rem;
+}
+.editElement{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+@media (max-width:45rem)
+{
+    .user-container{
+        display: flex;
+        flex-direction: column;
+      
+
+    }
+    .editElement{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    
+    }
+    .user-add-container{
+  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:2.5rem;
+    }
+    .btn,.editElement>*{
+        margin-bottom: 1.5rem;
+    }
+    .title{
+        text-align: center;
+    }
+
+}
+
+
+.inputContainer i {
+    position: absolute;
+    top:2rem;
+    left:10px;
+    
+ }
+ 
+ .inputContainer{
+     position: relative;
+ }
+ 
+ 
