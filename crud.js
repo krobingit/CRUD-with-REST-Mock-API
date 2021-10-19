@@ -13,7 +13,7 @@ document.body.innerHTML = `
              <input class="user-add-pic" Placeholder="Enter your pic url">
              </div >
              <div>
-             <button class="btn" onclick="addUser()">ADD</button>
+             <button class="btn" onclick="addUser()">CREATE</button>
              </div>
         </div>
       <div class="container">
