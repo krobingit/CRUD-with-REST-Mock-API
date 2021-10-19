@@ -44,7 +44,7 @@ async function getData() {
             
                   <input value=${user.name}  class="edit-${user.id}-name" Placeholder="Update new user-name">
                   <input value=${user.avatar} class="edit-${user.id}-pic" Placeholder="Update new user-pic-url">
-                  <button class="btn" onclick="saveUser(${user.id})"><i class="fas fa-save"></i>SAVE EDIT</button>
+                  <button class="btn" onclick="saveUser(${user.id})"><i class="fas fa-save"></i>  SAVE EDIT</button>
             </div>`
 
 
