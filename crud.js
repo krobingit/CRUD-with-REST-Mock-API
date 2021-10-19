@@ -54,11 +54,10 @@ async function getData() {
 getData();
 
 async function deleteUser(id) {
-    if (confirm("Do you want to delete this Profile")) {
+   
         const data = await fetch("https://6166c4da13aa1d00170a66f9.mockapi.io/users/" + id, { method: "DELETE" })
         getData();
-    }
-    else return false;
+    
 
 }
 
