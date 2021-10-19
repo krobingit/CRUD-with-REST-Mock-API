@@ -91,14 +91,14 @@ async function saveUser(id) {
     if (confirm("Do you want to save this edit to your Profile?")) {
         const editedname = document.querySelector(`.edit-${id}-name`).value;
         const editedpic = document.querySelector(`.edit-${id}-pic`).value;
-        const data = await fetch("https://6166c4da13aa1d00170a66f9.mockapi.io/users/",
+        const data = await fetch("https://6166c4da13aa1d00170a66f9.mockapi.io/users/"+id,
             {
-                method: "POST",
+                method: "PUT",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ name: editedname, avatar: editedpic })
 
             })
-        deleteUser(id);
+        getData();
     }
     else
         return false
